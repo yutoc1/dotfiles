@@ -1,0 +1,94 @@
+# Plugin Manager
+# ========================================
+[[plugins]]
+repo = 'Shougo/dein.vim'
+
+# Proc
+# ========================================
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+# Colorsheme
+# ========================================
+[[plugins]]
+repo = 'w0ng/vim-hybrid'
+
+[[plugins]]
+repo = 'KKPMW/moonshine-vim'
+
+[[plugins]]
+repo = 'cocopon/lightline-hybrid.vim'
+
+# Util
+# ========================================
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
+[[plugins]]
+repo = 'yuratomo/w3m.vim'
+hook_add = '''
+    let g:w3m#history#save_file = expand('~/.w3m/.vim_w3m_hist')
+'''
+
+[[plugins]]
+repo = 'thinca/vim-ref.git'
+hook_add = '''
+    let g:ref_source_webdict_sites = {
+    \   'je':{
+    \       'url': 'http://dictionary.infoseek.ne.jp/jeword/%s',
+    \   },
+    \   'ej':{
+    \       'url': 'http://dictionary.infoseek.ne.jp/ejword/%s',
+    \   },
+    \   'wiki':{
+    \       'url': 'http://ja.wikipedia.org/wiki/%s',
+    \   },
+    \ }
+    let g:ref_source_webdict_sites.default = 'ej'
+'''
+
+[[plugins]]
+repo = 'yuratomo/gmail.vim'
+hook_add = '''
+    let g:gmail_user_name = 'yutoc1@gmail.com'
+'''
+
+# Edit
+# ========================================
+[[plugins]]
+repo = 'kana/vim-operator-user'
+
+[[plugins]]
+repo = 'kana/vim-textobj-user'
+
+[[plugins]]
+repo = 'rhysd/vim-operator-surround'
+
+[[plugins]]
+repo = 'tpope/vim-surround'
+
+[[plugins]]
+repo = 'vim-scripts/Align'
+
+[[plugins]]
+repo = 'LeafCage/yankround.vim'
+hook_add = '''
+    nmap p <Plug>(yankround-p)
+    nmap P <Plug>(yankround-P)
+    nmap gp <Plug>(yankround-gp)
+    nmap gP <Plug>(yankround-prev)
+    nmap <C-p> <Plug>(yankround-prev)
+    nmap <C-n> <Plug>(yankround-next)
+'''
+
+# Markdown
+# ========================================
+[[plugins]]
+repo = 'plasticboy/vim-markdown'
+
+[[plugins]]
+repo = 'kannokanno/previm'
+
+[[plugins]]
+repo = 'tyru/open-browser.vim'

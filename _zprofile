@@ -1,0 +1,29 @@
+# Window Manager Start config
+[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx 
+
+# set background image
+wallpaper="${HOME}/work/pict/wallpaper/clock.jpg"
+
+if [ -e ${wallpaper} ]; then
+    feh --bg-scale ${wallpaper}
+    mv -f ${HOME}/.fehbg ${HOME}/.cache/feh/.fehbg
+fi
+
+# less
+export LESS='-g -i -M -R -S -W -z-4 -x4'
+export LESSHISTFILE=~/.cache/less/.lesshst
+export PAGER=less
+export LESS_TERMCAP_mb=$'\E[01;31m'
+export LESS_TERMCAP_md=$'\E[01;31m'
+export LESS_TERMCAP_me=$'\E[0m'
+export LESS_TERMCAP_se=$'\E[0m'
+export LESS_TERMCAP_so=$'\E[00;44;33m'
+export LESS_TERMCAP_ue=$'\E[0m'
+export LESS_TERMCAP_us=$'\E[01;32m'
+
+
+# go lang
+if [ -x "`which go`" ]; then
+    export GOPATH=$HOME/go
+    export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+fi
