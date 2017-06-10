@@ -44,6 +44,9 @@ xsetroot -cursor_name left_ptr
 # set Japanese Keyboad Layout
 # setxkbmap -layout jp
 
+# set disable middle button
+xinput set-button-map 15 1 0 3 4 5 6 7
+
 # set keymaps
 xmodmap ~/.xmodmap
 

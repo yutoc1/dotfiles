@@ -4,7 +4,6 @@
 - Xmonad
 - dmenu
 - xmobar
-- ~~Slim~~
 - CDM
 - zsh
 - urxvt
@@ -13,7 +12,6 @@
 - ricty
 - oft-ipaexfont
 - alsa-utils
-- ntp
 - vim
 - w3m
 - xsel
@@ -23,8 +21,6 @@
     * winetricks
     * winetricks allfonts
     * winetricks fontsmooth-rgb
-- go
-    * peco(go git github.com/peco/peco/cmd/peco)
 - git
 
 ###Software
@@ -34,17 +30,15 @@
     * poppler
     * mediainfo
     * highlight
+    * ffmpegthumbnailer
 - youtube-dl
 - vlc
 - GIMP
 - Inkspace
 - feh
 - chromium
-- google-drive-ocamlfuse
-    * chromium-pepper-flash
-- feednix
-- rtorrent
 - qbittorrent
+- GENE95
 
 ###Setup
 Later...

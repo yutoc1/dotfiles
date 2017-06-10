@@ -70,6 +70,11 @@ tmpspace() {
   )
 }
 
+# offline dict
+function dict() {
+    grep "$1" /home/yuto/dotfiles/gene-utf8.txt -E -A 1 -wi --color
+}
+
 # other opt
 setopt auto_cd
 setopt auto_pushd
