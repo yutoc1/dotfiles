@@ -6,6 +6,7 @@
 - xmobar
 - CDM
 - zsh
+- xsel
 - urxvt
     * urxvt-tabbex
 - ibus + mozc
@@ -14,7 +15,6 @@
 - alsa-utils
 - vim
 - w3m
-- xsel
 - wine
     * lib32-libpulse
     * lib32-mpg123
@@ -22,6 +22,7 @@
     * winetricks allfonts
     * winetricks fontsmooth-rgb
 - git
+- fzf
 
 ###Software
 - ranger
