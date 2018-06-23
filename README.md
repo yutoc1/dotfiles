@@ -1,4 +1,5 @@
 #My dotfiles
+
 ##Environment
 - Arch Linux
 - yaourt -> WIP
@@ -48,4 +49,3 @@
 
 ##Setup
 Later...
-
