@@ -1,20 +1,27 @@
 #My dotfiles
-###Environment
+##Environment
 - Arch Linux
-- Xmonad
+- yaourt -> WIP
+- Xmonad -> i3wm
 - dmenu
-- xmobar
+- xmobar -> N/A
 - CDM
+- tlp
 - zsh
 - xsel
 - urxvt
     * urxvt-tabbex
-- ibus + mozc
+- ibus + mozc -> fcitx + mozc
 - ricty
 - oft-ipaexfont
 - alsa-utils
+- fzf
+
+##Development
 - vim
+- VScode(visual-studio-code-bin)
 - w3m
+- Docker
 - wine
     * lib32-libpulse
     * lib32-mpg123
@@ -22,9 +29,8 @@
     * winetricks allfonts
     * winetricks fontsmooth-rgb
 - git
-- fzf
 
-###Software
+##Software
 - ranger
     * atool
     * unrar
@@ -39,7 +45,7 @@
 - feh
 - chromium
 - qbittorrent
-- GENE95
 
-###Setup
+##Setup
 Later...
+

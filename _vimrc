@@ -142,7 +142,7 @@ filetype plugin indent off
 
 let s:dein_dir = expand('~/.cache/dein')
 let s:dein_repo = 'https://github.com/Shougo/dein.vim'
-let s:dein_repo_dir = s:dein_dir . '/dein/repos/github.com/Shougo/dein.vim'
+let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 if ! isdirectory(s:dein_repo_dir)
     call system('git clone ' . s:dein_repo . " " . s:dein_repo_dir)
