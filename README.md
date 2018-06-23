@@ -1,5 +1,4 @@
 #My dotfiles
-
 ##Environment
 - Arch Linux
 - yaourt -> WIP
@@ -12,15 +11,17 @@
 - xsel
 - urxvt
     * urxvt-tabbex
-- ibus + mozc -> fcitx + mozc
+- fcitx-mozc
 - ricty
 - oft-ipaexfont
+- zip
 - alsa-utils
 - fzf
 
 ##Development
 - vim
 - VScode(visual-studio-code-bin)
+- git
 - w3m
 - Docker
 - wine
@@ -29,7 +30,6 @@
     * winetricks
     * winetricks allfonts
     * winetricks fontsmooth-rgb
-- git
 
 ##Software
 - ranger
@@ -43,7 +43,10 @@
 - vlc
 - GIMP
 - Inkspace
+- krita
 - feh
+- mupdf
+- mcomix
 - chromium
 - qbittorrent
 

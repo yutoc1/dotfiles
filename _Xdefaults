@@ -17,6 +17,11 @@ URxvt.tabbed.autohide: true
 URxvt.tabbed.tab-bg: 4
 URxvt.tabbed.title: no
 
+! Cursor
+URxvt.CursorBlink: true
+URxvt.CursorColor: #657b83
+URxvt.CursorUnderline: true
+
 ! Caps_Lock -> ctrl
 remove Lock = Caps_Lock
 remove Control = Control_L
