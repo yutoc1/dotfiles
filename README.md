@@ -3,9 +3,8 @@
 - Arch Linux
 - yaourt -> WIP
 - Xmonad -> i3wm
-- dmenu
+- dmenu -> Rofi
 - xmobar -> N/A
-- CDM
 - tlp
 - zsh
 - xsel
