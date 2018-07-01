@@ -23,12 +23,6 @@
 - git
 - w3m
 - Docker
-- wine
-    * lib32-libpulse
-    * lib32-mpg123
-    * winetricks
-    * winetricks allfonts
-    * winetricks fontsmooth-rgb
 
 ##Software
 - ranger
@@ -48,6 +42,19 @@
 - mcomix
 - chromium
 - qbittorrent
+
+##Web
+- google
+    * google Drive
+    * google play music
+    * feedly
+    * github
+    * Benefit One
+    * IIJmio
+    * yodobashi
+    * furunavi
+    * ping-t
+    * amazon.co.jp
 
 ##Setup
 Later...
