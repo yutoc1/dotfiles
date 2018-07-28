@@ -57,5 +57,5 @@ xset r rate 190 60
 # start urxvt deamon
 urxvtd --quiet --fork --opendisplay &
 
-# start xmonad
-exec xmonad
+# start WM
+exec i3

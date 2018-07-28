@@ -1,0 +1,20 @@
+rofi.modi: combi,run,ssh,system:~/.config/rofi/rofi_system.sh
+rofi.combi-modi: window,drun
+rofi.font: IPAexGothic,25
+rofi.width: 70
+rofi.lines: 8
+rofi.padding: 150
+,
+rofi.fixed-num-lines: true
+rofi.hide-scrollbar: true
+rofi.sidebar-mode: true
+
+rofi.kb-cancel: Escape,Control+c
+rofi.kb-mode-next: Shift+Right,Control+i
+rofi.kb-mode-previous: Shift+Left,Control+Shift+i
+
+rofi.color-enabled: true
+rofi.color-window: argb:cc040404, argb:cc040404, argb:cc458588
+rofi.color-normal: argb:00000000,argb:cc458588,argb:00000000,argb:cc076678,argb:dd83a598
+rofi.color-active: argb:00000000,argb:cc689d6a,argb:00000000,argb:cc427b58,argb:dd8ec07c
+rofi.color-urgent: argb:00000000,argb:ccb16286,argb:00000000,argb:cc8f3f71,argb:ddd3869b

@@ -1,9 +1,9 @@
-#My dotfiles
-##Environment
+# My dotfiles
+## Environment
 - Arch Linux
-- yaourt -> WIP
-- Xmonad -> i3wm
-- dmenu -> Rofi
+- yay
+- i3wm-gap
+- rofi
 - xmobar -> N/A
 - tlp
 - zsh
@@ -17,14 +17,16 @@
 - alsa-utils
 - fzf
 
-##Development
+## Development
 - vim
 - VScode(visual-studio-code-bin)
 - git
 - w3m
 - Docker
 
-##Software
+## Python
+
+## Software
 - ranger
     * atool
     * unrar
@@ -43,7 +45,7 @@
 - chromium
 - qbittorrent
 
-##Web
+## Web
 - google
     * google Drive
     * google play music
@@ -51,10 +53,9 @@
     * github
     * Benefit One
     * IIJmio
-    * yodobashi
     * furunavi
     * ping-t
     * amazon.co.jp
 
-##Setup
+## Setup
 Later...
