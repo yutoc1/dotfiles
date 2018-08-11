@@ -4,7 +4,7 @@
 - yay
 - i3wm-gap
 - rofi
-- xmobar -> N/A
+- polybar
 - tlp
 - zsh
 - xsel
