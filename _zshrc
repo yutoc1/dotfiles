@@ -35,16 +35,16 @@ zstyle ':completion:*' list-colors ''
 # prompt
 case ${UID} in
 0)
-    PROMPT="%B%{${fg[green]}%}%/#%{${reset_color}%}%b "
-    PROMPT2="%B%{${fg[green]}%}%_#%{${reset_color}%}%b "
-    SPROMPT="%{${fg[green]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+    PROMPT="%B%{${fg[blue]}%}%/#%{${reset_color}%}%b "
+    PROMPT2="%B%{${fg[blue]}%}%_#%{${reset_color}%}%b "
+    SPROMPT="%{${fg[blue]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
     [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
       PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
 *)
-    PROMPT="%{${fg[green]}%}%/%%%{${reset_color}%} "
-    PROMPT2="%B%{${fg[green]}%}_%%%{${reset_color}%} "
-    SPROMPT="%{${fg[green]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
+    PROMPT="%{${fg[blue]}%}%/%%%{${reset_color}%} "
+    PROMPT2="%B%{${fg[blue]}%}_%%%{${reset_color}%} "
+    SPROMPT="%{${fg[blue]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
     [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
       PROMPT="%{$fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
@@ -58,6 +58,7 @@ zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'b
 # source
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 [ -f ~/.zsh/tool.zsh ] && source ~/.zsh/tool.zsh
+[ -f ~/.zsh/anyenv.zsh ] && source ~/.zsh/anyenv.zsh
 
 # other opt
 setopt auto_cd

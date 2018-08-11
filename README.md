@@ -23,8 +23,12 @@
 - git
 - w3m
 - Docker
+- anyenv
+    * anyenv-update
+    * pyenv
 
 ## Python
+ - pipenv
 
 ## Software
 - ranger
