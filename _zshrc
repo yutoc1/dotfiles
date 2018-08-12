@@ -41,7 +41,21 @@ zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'b
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 [ -f ~/.zsh/tool.zsh ] && source ~/.zsh/tool.zsh
 [ -f ~/.zsh/anyenv.zsh ] && source ~/.zsh/anyenv.zsh
-[ -f ~/.zsh/git.zsh ] && source ~/.zsh/git.zsh
+
+# git prompt
+autoload -Uz vcs_info
+setopt prompt_subst
+
+zstyle ':vcs_info:git:*' check-for-changes true
+zstyle ':vcs_info:git:*' unstagedstr '!'
+zstyle ':vcs_info:git:*' stagedstr '+'
+zstyle ':vcs_info:*' formats ' %c%u(%s:%b)'
+zstyle ':vcs_info:*' actionformats ' %c%u(%s:%b|%a)'
+precmd () {
+    psvar=()
+    LANG=en_US.UTF-8 vcs_info
+    [[ -n "$vcs_info_msg_0_" ]] && psvar[1]="$vcs_info_msg_0_"
+}
 
 # prompt
 case ${UID} in
@@ -53,7 +67,7 @@ case ${UID} in
       PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
 *)
-    PROMPT="%B%F{blue}>>`git-current-branch`%{${fg[blue]}%}%/%%%{${reset_color}%}
+    PROMPT="%B%F{blue}>>%1(v|%1v|)%f%b %{${fg[blue]}%}%/%%%{${reset_color}%}
 %B%F{blue}> %f%b "
     PROMPT2="%B%{${fg[blue]}%}_>%{${reset_color}%} "
     SPROMPT="%{${fg[blue]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
