@@ -2,6 +2,17 @@
 autoload colors
 colors
 
+# opt
+setopt auto_cd
+setopt auto_pushd
+setopt pushd_ignore_dups
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+setopt list_packed
+setopt magic_equal_subst
+setopt nolistbeep
+setopt no_beep
+
 # alias
 alias ls='ls --color=auto'
 alias ll='ls -la --color=auto'
@@ -75,14 +86,3 @@ case ${UID} in
       PROMPT="%{$fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
 esac
-
-# other opt
-setopt auto_cd
-setopt auto_pushd
-setopt pushd_ignore_dups
-setopt hist_ignore_all_dups
-setopt hist_ignore_space
-setopt list_packed
-setopt magic_equal_subst
-setopt nolistbeep
-setopt no_beep

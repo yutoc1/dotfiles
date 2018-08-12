@@ -126,7 +126,7 @@ gaps inner 5
 gaps outer 3
 
 # set background
-exec_always --no-startup-id feh --bg-scale ~/work/pict/wallpaper/blue-block.jpg
+exec_always --no-startup-id feh --bg-scale ~/work/pict/wallpaper/blue-block.jpg && mv ~/.fehbg ~/.config/.fehbg
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
