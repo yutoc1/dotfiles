@@ -32,6 +32,17 @@ autoload -U compinit
 compinit -d ~/.cache/zsh/compinit
 zstyle ':completion:*' list-colors ''
 
+# color setting
+export LSCOLORS=ExFxCxdxBxegedabagacad
+export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
+
+# source
+[ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
+[ -f ~/.zsh/tool.zsh ] && source ~/.zsh/tool.zsh
+[ -f ~/.zsh/anyenv.zsh ] && source ~/.zsh/anyenv.zsh
+[ -f ~/.zsh/git.zsh ] && source ~/.zsh/git.zsh
+
 # prompt
 case ${UID} in
 0)
@@ -42,23 +53,14 @@ case ${UID} in
       PROMPT="%{${fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
 *)
-    PROMPT="%{${fg[blue]}%}%/%%%{${reset_color}%} "
-    PROMPT2="%B%{${fg[blue]}%}_%%%{${reset_color}%} "
+    PROMPT="%B%F{blue}>>`git-current-branch`%{${fg[blue]}%}%/%%%{${reset_color}%}
+%B%F{blue}> %f%b "
+    PROMPT2="%B%{${fg[blue]}%}_>%{${reset_color}%} "
     SPROMPT="%{${fg[blue]}%}%r is correct? [n,y,a,e]:%{${reset_color}%} "
     [ -n "${REMOTEHOST}${SSH_CONNECTION}" ] &&
       PROMPT="%{$fg[white]}%}${HOST%%.*} ${PROMPT}"
     ;;
 esac
-
-# color setting
-export LSCOLORS=ExFxCxdxBxegedabagacad
-export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
-zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
-
-# source
-[ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
-[ -f ~/.zsh/tool.zsh ] && source ~/.zsh/tool.zsh
-[ -f ~/.zsh/anyenv.zsh ] && source ~/.zsh/anyenv.zsh
 
 # other opt
 setopt auto_cd

@@ -2,11 +2,14 @@
 background = #2d2d2d
 background-alt = #2d2d2d
 foreground = #ffffff
-foreground-alt = #55
+foreground-alt = #666666
 primary = #ded32e
 secondary = #d64937
 alert = #d64937
+
 underline = #006F86
+underline-alt = #666666
+underline-warn = #ffb52a
 
 [global/wm]
 margin-top = 0
@@ -104,7 +107,7 @@ interval = 1.0
 format-connected = <label-connected>
 format-connected-underline = ${colors.underline}
 format-disconnected = <label-disconnected>
-format-disconnected-underline = ${colors.underline}
+format-disconnected-underline = ${colors.underline-alt}
 
 label-connected = ⬇ %downspeed% ⬆ %upspeed%
 label-disconnected = not connected
@@ -126,19 +129,18 @@ label-volume-foreground = ${root.foreground}
 
 format-muted = <label-muted>
 format-muted-foreground = ${colors.foreground-alt}
-format-muted-underline = ${colors.underline}
+format-muted-underline = ${colors.underline-alt}
 label-muted = muted
 
 [module/battery]
 type = internal/battery
 battery = BAT0
 adapter = ADP1
-full-at = 98
 
 time-format = %H:%M
 
 format-charging = <label-charging>
-format-charging-underline = #ffb52a
+format-charging-underline = ${colors.underline-warn}
 label-charging = Charging %percentage%%
 
 format-discharging = <label-discharging>
@@ -147,19 +149,20 @@ label-discharging = %percentage%% %time%
 
 format-full = <label-full>
 format-full-foreground = ${colors.foreground-alt}
-format-full-underline = ${colors.underline}
+format-full-underline = ${colors.underline-alt}
 label-full = Full
 
 [module/temperature]
 type = internal/temperature
 interval = 5
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 65
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
 
 format = <label>
 format-underline = ${colors.underline}
 format-warn = <label-warn>
-format-warn-underline = ${colors.underline}
+format-warn-underline = ${colors.underline-warn}
 
 label = %temperature%
 label-warn = %temperature-c%

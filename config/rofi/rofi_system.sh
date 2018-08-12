@@ -1,5 +1,5 @@
 declare -A list=(
-  ['lock']='i3lock -i ~/work/pict/wallpaper/lock.jpg'
+  ['lock']='i3lock -p default -n -f -e -c 006F86 -i ~/work/pict/wallpaper/lock.png'
   ['poweroff']='systemctl poweroff'
   ['reboot']='systemctl reboot'
 )

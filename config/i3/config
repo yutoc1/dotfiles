@@ -126,7 +126,7 @@ gaps inner 5
 gaps outer 3
 
 # set background
-exec_always --no-startup-id feh --bg-scale ~/work/pict/wallpaper/clock.jpg
+exec_always --no-startup-id feh --bg-scale ~/work/pict/wallpaper/blue-block.jpg
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -134,6 +134,7 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 
 # Lock i3
+bindsym $mod+Ctrl+l exec --no-startup-id i3lock -p default -n -f -e -c 006F86 -i ~/work/pict/wallpaper/lock.png
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
