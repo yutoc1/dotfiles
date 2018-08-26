@@ -136,6 +136,7 @@ label-muted = muted
 type = internal/battery
 battery = BAT0
 adapter = ADP1
+full-at = 96
 
 time-format = %H:%M
 

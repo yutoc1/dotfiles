@@ -99,6 +99,13 @@ cmap w!! w !sudo tee > /dev/null %
 noremap <Space>h ^
 noremap <Space>l $
 
+" nohlsearch 
+nnoremap <silent><C-k><C-k> :<C-u>set nohlsearch<CR>
+
+" insertmode move
+inoremap <C-f> <right>
+inoremap <C-p> <left>
+
 "app lunch
 nnoremap <Space>w :W3mVSplit google<CR>
 nnoremap <Space>m :Gmail<CR>
