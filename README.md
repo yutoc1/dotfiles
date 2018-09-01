@@ -16,6 +16,7 @@
 - zip
 - alsa-utils
 - fzf
+- redshift
 
 ## Development
 - vim

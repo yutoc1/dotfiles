@@ -25,6 +25,8 @@ alias w3m='w3m google.com'
 alias yp='youtube-dl `xp` -o - | cvlc -'
 alias xp='xsel -bo'
 alias xc='xsel -bi'
+alias red='redshift -O 4500'
+alias redx='redshift -x'
 
 # history
 HISTFILE=~/.cache/zsh/.zsh_history
