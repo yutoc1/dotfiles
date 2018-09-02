@@ -99,5 +99,5 @@ fd() {
 
 # fuzzy select files
 fv() {
-  fzf --bind --preview "head -100 {}" 'ctrl-l:execute(less {}),ctrl-v:execute(vim {})+abort'
+    fzf --preview 'head -100 {}' --bind 'ctrl-l:execute(less {}),ctrl-v:execute(vim {}),enter:execute(vim {})+abort'
 }

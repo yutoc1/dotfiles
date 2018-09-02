@@ -54,6 +54,16 @@ hook_add = '''
     let g:gmail_user_name = 'yutoc1@gmail.com'
 '''
 
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+    let g:gitgutter_sign_added ='・'
+    let g:gitgutter_sign_modified ='・'
+    let g:gitgutter_sign_removed ='・'
+    let g:gitgutter_sign_removed_first_line ='・'
+    let g:gitgutter_sign_modified_removed ='・'
+'''
+
 # Edit
 # ========================================
 [[plugins]]
