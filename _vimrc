@@ -228,7 +228,8 @@ let g:lightline = {
      \ 'colorscheme': 'hybrid',
      \ 'mode_map': {'c': 'NORMAL'},
      \ 'active': {
-     \     'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ]
+     \     'left': [ [ 'mode', 'paste' ], [ 'fugitive', 'filename' ] ],
+     \     'right': [ [ 'lineinfo', 'syntastic' ], [ 'percent' ], [ 'fileencoding', 'filetype' ]]
      \ },
      \ 'component_function': {
      \     'modified': 'LightLineModified',
