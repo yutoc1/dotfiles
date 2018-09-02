@@ -78,6 +78,11 @@ set clipboard+=unnamed,autoselect
 vmap <C-c> :w !xsel -ib<CR><CR>
 
 "=========================================
+"  source config
+"=========================================
+runtime! .vim/config/*.vim
+
+"=========================================
 "  key config
 "=========================================
 "invalidation
@@ -124,7 +129,6 @@ nnoremap <silent> [unite]b :<C-u>Unite buffer<CR>
 nnoremap <silent> [unite]r :<C-u>Unite register<CR>
 nnoremap <silent> [unite]m :<C-u>Unite file_mru<CR>
 nnoremap <silent> [unite]c :<C-u>Unite bookmark<CR>
-nnoremap <silent> [unite]o :<C-u>Unite outline<CR>
 nnoremap <silent> [unite]t :<C-u>Unite tab<CR>
 nnoremap <silent> [unite]w :<C-u>Unite window<CR>
 nnoremap <silent> [unite]e :VimFilerExplorer<CR>
