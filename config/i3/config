@@ -117,6 +117,8 @@ bindsym XF86AudioLowerVolume exec "amixer set Master 2-"
 bindsym XF86AudioMute exec "amixer set Master toggle"
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 2"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 2"
+bindsym $mod+t exec "xinput set-prop 'SynPS/2 Synaptics TouchPad' --type=int --format=8 'Device Enabled' `echo $((($(xinput list-props 16 | grep 'Device Enabled' | tail -c 2)-1)**2))`"
+
 
 # UI setting
 new_window 1pixel
