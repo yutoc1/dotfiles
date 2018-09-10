@@ -9,6 +9,14 @@ repo = 'Shougo/dein.vim'
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
+# Proc
+# ========================================
+[[plugins]]
+repo = 'roxma/nvim-yarp'
+
+[[plugins]]
+repo = 'roxma/vim-hug-neovim-rpc'
+
 # Colorsheme
 # ========================================
 [[plugins]]
@@ -48,11 +56,6 @@ hook_add = '''
     let g:ref_source_webdict_sites.default = 'ej'
 '''
 
-[[plugins]]
-repo = 'yuratomo/gmail.vim'
-hook_add = '''
-    let g:gmail_user_name = 'yutoc1@gmail.com'
-'''
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
 hook_add = '''
