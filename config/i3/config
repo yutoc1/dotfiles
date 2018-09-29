@@ -142,7 +142,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # external display
 mode "ex_display" {
-    bindsym e exec --no-startup-id xrandr --output DP1 --mode 1920x1080 --right-of eDP1
+    bindsym e exec --no-startup-id xrandr --output DP1 --mode 1920x1080 --auto --right-of eDP1
     bindsym f exec --no-startup-id xrandr --output DP1 --off
 
     bindsym Return mode "default"
