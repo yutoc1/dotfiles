@@ -52,7 +52,9 @@
 
 ## Web
 - google
-    * google Drive
+    * GDrive
+    * Gmail
+    * google photo
     * google play music
     * feedly
     * github
@@ -61,6 +63,4 @@
     * furunavi
     * ping-t
     * amazon.co.jp
-
-## Setup
-Later...
+    * merukari
