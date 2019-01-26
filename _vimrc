@@ -61,11 +61,25 @@ set colorcolumn=80
 set list
 set wrap
 set laststatus=2
+set cursorline
 
 "bell
 set t_vb=
 set novisualbell
 set noerrorbells
+
+"finding files
+set path+=**
+set wildmenu
+
+"tag jump
+command! MakeTags !ctags -R .
+
+"file browsing
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_liststyle=3
 
 "invisible char
 set listchars=tab:»-,trail:-,extends:»,precedes:«,nbsp:%,eol:↲
