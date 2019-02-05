@@ -127,7 +127,6 @@ inoremap <C-p> <left>
 
 "app lunch
 nnoremap <Space>w :W3mVSplit google<CR>
-nnoremap <Space>m :Gmail<CR>
 nmap <Space>r <Plug>(quickrun)
 nnoremap <silent> <Space>ss :VimShell<CR>
 nnoremap <silent> <Space>sp :VimShellInteractive python<CR>
