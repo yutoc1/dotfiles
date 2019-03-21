@@ -20,8 +20,9 @@
 
 ## Development
 - vim
-- VScode(visual-studio-code-bin)
 - git
+- VScode(visual-studio-code-bin)
+- Jupyter
 - w3m
 - Docker
 - anyenv
