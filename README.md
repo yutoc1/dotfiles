@@ -5,7 +5,6 @@
 - tlp
 - fcitx-mozc
 - redshift
-- alsa-utils
 
 ## Windowmanager
 - i3wm-gap
@@ -37,6 +36,17 @@
 
 ## Python
  - pipenv
+
+## Audio/Bluetooth
+- alsa-utils
+- pulseaudio
+- pulseaudio-bluetooth
+- pulseaudio-alsa
+- pavucontrol
+- blueman
+- bluez
+- bluez-libs
+- bluez-utils
 
 ## Software
 - ranger

@@ -111,13 +111,12 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 # general key config
-bindsym XF86AudioRaiseVolume exec "amixer set Master 2+"
-bindsym XF86AudioLowerVolume exec "amixer set Master 2-"
+bindsym XF86AudioRaiseVolume exec "pamixer --increase 2 "
+bindsym XF86AudioLowerVolume exec "pamixer --decrease 2"
 bindsym XF86AudioMute exec "amixer set Master toggle"
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 2"
 bindsym XF86MonBrightnessDown exec "xbacklight -dec 2"
 bindsym $mod+t exec "xinput set-prop 'SynPS/2 Synaptics TouchPad' --type=int --format=8 'Device Enabled' `echo $((($(xinput list-props 16 | grep 'Device Enabled' | tail -c 2)-1)**2))`"
-
 
 # UI setting
 new_window 1pixel
@@ -142,8 +141,8 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # external display
 mode "ex_display" {
-    bindsym e exec --no-startup-id xrandr --output DP1 --auto --scale 2x2 --right-of eDP1
-    bindsym d exec --no-startup-id xrandr --output DP1 --off
+    bindsym e exec --no-startup-id xrandr --output DP2 --auto --scale 2x2 --right-of eDP1
+    bindsym d exec --no-startup-id xrandr --output DP2 --off
 
     bindsym Return mode "default"
     bindsym Escape mode "default"

@@ -1,7 +1,7 @@
 [colors]
 background = #2d2d2d
 background-alt = #2d2d2d
-foreground = #ffffff
+foreground = #eeeeee
 foreground-alt = #666666
 primary = #ded32e
 secondary = #d64937
@@ -159,7 +159,7 @@ type = internal/temperature
 interval = 5
 thermal-zone = 0
 warn-temperature = 65
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon1/temp1_input
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
 
 format = <label>
 format-underline = ${colors.underline}
@@ -174,8 +174,8 @@ label-warn-foreground = ${colors.secondary}
 type = internal/date
 interval = 1
 
-date = %a %m/%d
-date-alt = %a %d %b %Y
+date =
+date-alt = %a %Y/%m/%d
 
 time = %H:%M
 time-alt = %H:%M:%S
