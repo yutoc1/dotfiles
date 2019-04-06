@@ -2,21 +2,27 @@
 ## Environment
 - Arch Linux
 - yay
+- tlp
+- fcitx-mozc
+- redshift
+- alsa-utils
+
+## Windowmanager
 - i3wm-gap
 - rofi
 - polybar
-- tlp
+
+## Shell
 - zsh
+- fzf
 - xsel
 - urxvt
     * urxvt-tabbex
-- fcitx-mozc
-- ricty
-- oft-ipaexfont
 - zip
-- alsa-utils
-- fzf
-- redshift
+
+## font
+- ttf-ricty
+- oft-ipafont
 
 ## Development
 - vim
@@ -43,7 +49,6 @@
 - youtube-dl
 - vlc
 - GIMP
-- Inkspace
 - krita
 - feh
 - mupdf
