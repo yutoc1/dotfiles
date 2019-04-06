@@ -172,7 +172,7 @@ label-warn-foreground = ${colors.secondary}
 
 [module/date]
 type = internal/date
-interval = 5
+interval = 1
 
 date = %a %m/%d
 date-alt = %a %d %b %Y
