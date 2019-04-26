@@ -19,7 +19,7 @@
     * urxvt-tabbex
 - zip
 
-## font
+## Font
 - ttf-ricty
 - oft-ipafont
 
@@ -27,15 +27,14 @@
 - vim
 - git
 - VScode(visual-studio-code-bin)
-- Jupyter
+- Jupyter Lab
 - w3m
 - Docker
+- python-pip
+- python-pipenv
 - anyenv
     * anyenv-update
     * pyenv
-
-## Python
- - pipenv
 
 ## Audio/Bluetooth
 - alsa-utils
@@ -53,7 +52,6 @@
     * atool
     * unrar
     * poppler
-    * mediainfo
     * highlight
     * ffmpegthumbnailer
 - youtube-dl
@@ -62,5 +60,4 @@
 - krita
 - feh
 - mupdf
-- mcomix
 - chromium

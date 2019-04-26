@@ -56,16 +56,6 @@ hook_add = '''
     let g:ref_source_webdict_sites.default = 'ej'
 '''
 
-[[plugins]]
-repo = 'airblade/vim-gitgutter'
-hook_add = '''
-    let g:gitgutter_sign_added = '・'
-    let g:gitgutter_sign_modified = '・'
-    let g:gitgutter_sign_removed = '・'
-    let g:gitgutter_sign_removed_first_line = '・'
-    let g:gitgutter_sign_modified_removed = '・' 
-'''
-
 # Edit
 # ========================================
 [[plugins]]
@@ -104,3 +94,18 @@ repo = 'kannokanno/previm'
 
 [[plugins]]
 repo = 'tyru/open-browser.vim'
+
+# Git
+# ========================================
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
+hook_add = '''
+    let g:gitgutter_sign_added = '・'
+    let g:gitgutter_sign_modified = '・'
+    let g:gitgutter_sign_removed = '・'
+    let g:gitgutter_sign_removed_first_line = '・'
+    let g:gitgutter_sign_modified_removed = '・' 
+'''
