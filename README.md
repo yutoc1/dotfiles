@@ -18,6 +18,7 @@
 - urxvt
     * urxvt-tabbex
 - zip
+- unrar
 
 ## Font
 - ttf-ricty
@@ -48,12 +49,6 @@
 - bluez-utils
 
 ## Software
-- ranger
-    * atool
-    * unrar
-    * poppler
-    * highlight
-    * ffmpegthumbnailer
 - youtube-dl
 - vlc
 - GIMP
