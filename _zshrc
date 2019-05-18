@@ -31,6 +31,7 @@ alias vi='vim'
 alias pacman='sudo pacman'
 alias w3='w3m google.com'
 alias w3m='w3m google.com'
+alias mozcdic='/usr/lib/mozc/mozc_tool -mode=dictionary_tool'
 alias yp='youtube-dl `xp` -o - | cvlc -'
 alias xp='xsel -bo'
 alias xc='xsel -bi'
@@ -60,6 +61,13 @@ export LSCOLORS=ExFxCxdxBxegedabagacad
 export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
 zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'bd=46;34' 'cd=43;34'
 
+# GO setting
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# Ruby setting
+export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
+
 # source
 [ -f ~/.zsh/fzf.zsh ] && source ~/.zsh/fzf.zsh
 [ -f ~/.zsh/tool.zsh ] && source ~/.zsh/tool.zsh
@@ -69,11 +77,12 @@ zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'b
 autoload -Uz vcs_info
 setopt prompt_subst
 
+zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:git:*' unstagedstr '!'
 zstyle ':vcs_info:git:*' stagedstr '+'
-zstyle ':vcs_info:*' formats ' %c%u(%s:%b)'
-zstyle ':vcs_info:*' actionformats ' %c%u(%s:%b|%a)'
+zstyle ':vcs_info:*' formats ' %c%u[%b]'
+zstyle ':vcs_info:*' actionformats ' %c%u[%b|%a]'
 precmd () {
     psvar=()
     LANG=en_US.UTF-8 vcs_info
