@@ -9,8 +9,6 @@ repo = 'Shougo/dein.vim'
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
-# Proc
-# ========================================
 [[plugins]]
 repo = 'roxma/nvim-yarp'
 
@@ -30,6 +28,9 @@ repo = 'cocopon/lightline-hybrid.vim'
 
 # Util
 # ========================================
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+
 [[plugins]]
 repo = 'itchyny/lightline.vim'
 
@@ -56,6 +57,16 @@ hook_add = '''
     let g:ref_source_webdict_sites.default = 'ej'
 '''
 
+[[plugins]]
+repo = 'jacquesbh/vim-showmarks'
+hook_add = '''
+    nmap <silent> ms :DoShowMarks<CR>
+    nmap <silent> md :NoShowMarks<CR>
+'''
+         
+[[plugins]]
+repo = 'junegunn/goyo.vim'
+
 # Edit
 # ========================================
 [[plugins]]
@@ -72,6 +83,9 @@ repo = 'tpope/vim-surround'
 
 [[plugins]]
 repo = 'vim-scripts/Align'
+
+[[plugins]]
+repo = 'ervandew/supertab'
 
 [[plugins]]
 repo = 'LeafCage/yankround.vim'
