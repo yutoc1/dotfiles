@@ -28,7 +28,6 @@
 - vim
 - git
 - VScode(visual-studio-code-bin)
-- Jupyter Lab
 - w3m
 - Docker
 - python-pip
