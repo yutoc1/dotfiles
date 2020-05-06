@@ -156,10 +156,9 @@ label-full = Full
 
 [module/temperature]
 type = internal/temperature
-interval = 5
+interval = 1
 thermal-zone = 0
 warn-temperature = 65
-hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
 
 format = <label>
 format-underline = ${colors.underline}

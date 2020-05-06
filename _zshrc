@@ -15,14 +15,14 @@ setopt no_beep
 
 # alias
 alias ls='ls --color=auto'
-alias ll='ls -la --color=auto'
+alias ll='ls -lA --color=auto'
 alias l='clear && ll'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ga='git add'
 alias gd='git diff'
-alias gs='git status'
+#alias gs='git status'
 alias gp='git push'
 alias gb='git branch'
 alias gco='git checkout'

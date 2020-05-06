@@ -56,6 +56,7 @@ set pumheight=15
 
 "display
 set number
+set relativenumber
 set textwidth=0
 set colorcolumn=80
 set list

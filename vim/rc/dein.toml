@@ -123,3 +123,8 @@ hook_add = '''
     let g:gitgutter_sign_removed_first_line = '・'
     let g:gitgutter_sign_modified_removed = '・' 
 '''
+
+# Go
+# ========================================
+[[plugins]]
+repo = 'fatih/vim-go'
