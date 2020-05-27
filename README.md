@@ -31,6 +31,8 @@
 - w3m
 - Docker
 - python-pip
+    * flake8
+    * autopep8
 - python-pipenv
 - anyenv
     * anyenv-update

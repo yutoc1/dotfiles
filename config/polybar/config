@@ -156,6 +156,7 @@ label-full = Full
 
 [module/temperature]
 type = internal/temperature
+hwmon-path = /sys/devices/platform/coretemp.0/hwmon/hwmon6/temp1_input
 interval = 1
 thermal-zone = 0
 warn-temperature = 65

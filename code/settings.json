@@ -1,4 +1,57 @@
 {
     "workbench.colorTheme": "Hybrid Next",
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "editor.formatOnSave": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.pycodestyleEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--ignore=W293, W504",
+        "--max-line-length=150",
+        "--max-complexity=20"
+    ],
+    "python.formatting.provider": "autopep8",
+    "python.formatting.autopep8Args": [
+        "--ignore=E50",
+        "--max-line-length=150",
+        "--aggressive",
+        "--aggressive"
+    ],
+    "autoDocstring.docstringFormat": "google",
+    "vsicons.dontShowNewVersionMessage": true,
+    "hediet.vscode-drawio.local-storage": {
+        ".drawio-config": {
+            "language": "",
+            "customFonts": [],
+            "libraries": "general;uml;er;bpmn;flowchart;basic;arrows2",
+            "customLibraries": [
+                "L.scratchpad"
+            ],
+            "plugins": [],
+            "recentColors": [],
+            "formatWidth": "240",
+            "createTarget": false,
+            "pageFormat": {
+                "x": 0,
+                "y": 0,
+                "width": 827,
+                "height": 1169
+            },
+            "search": true,
+            "showStartScreen": true,
+            "gridColor": "#d0d0d0",
+            "darkGridColor": "#6e6e6e",
+            "autosave": true,
+            "resizeImages": null,
+            "openCounter": 0,
+            "version": 18,
+            "unit": 1,
+            "isRulerOn": false,
+            "ui": ""
+        }
+    },
+    "telemetry.enableCrashReporter": false
 }
