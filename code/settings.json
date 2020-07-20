@@ -26,7 +26,7 @@
         ".drawio-config": {
             "language": "",
             "customFonts": [],
-            "libraries": "general;uml;er;bpmn;flowchart;basic;arrows2",
+            "libraries": "general;basic;arrows2;flowchart;er;uml;aws4;bpmn",
             "customLibraries": [
                 "L.scratchpad"
             ],
@@ -53,5 +53,8 @@
             "ui": ""
         }
     },
-    "telemetry.enableCrashReporter": false
+    "telemetry.enableCrashReporter": false,
+    "window.menuBarVisibility": "default",
+    "workbench.statusBar.visible": true,
+    "npm.enableScriptExplorer": true
 }

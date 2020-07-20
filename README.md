@@ -19,6 +19,7 @@
     * urxvt-tabbex
 - zip
 - unrar
+- anamnesis
 
 ## Font
 - ttf-ricty
