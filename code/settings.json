@@ -22,37 +22,7 @@
     ],
     "autoDocstring.docstringFormat": "google",
     "vsicons.dontShowNewVersionMessage": true,
-    "hediet.vscode-drawio.local-storage": {
-        ".drawio-config": {
-            "language": "",
-            "customFonts": [],
-            "libraries": "general;basic;arrows2;flowchart;er;uml;aws4;bpmn",
-            "customLibraries": [
-                "L.scratchpad"
-            ],
-            "plugins": [],
-            "recentColors": [],
-            "formatWidth": "240",
-            "createTarget": false,
-            "pageFormat": {
-                "x": 0,
-                "y": 0,
-                "width": 827,
-                "height": 1169
-            },
-            "search": true,
-            "showStartScreen": true,
-            "gridColor": "#d0d0d0",
-            "darkGridColor": "#6e6e6e",
-            "autosave": true,
-            "resizeImages": null,
-            "openCounter": 0,
-            "version": 18,
-            "unit": 1,
-            "isRulerOn": false,
-            "ui": ""
-        }
-    },
+    "hediet.vscode-drawio.local-storage": "eyIuZHJhd2lvLWNvbmZpZyI6IntcImxhbmd1YWdlXCI6XCJcIixcImN1c3RvbUZvbnRzXCI6W10sXCJsaWJyYXJpZXNcIjpcImdlbmVyYWw7YmFzaWM7YXJyb3dzMjtmbG93Y2hhcnQ7ZXI7dW1sO2F3czQ7YnBtblwiLFwiY3VzdG9tTGlicmFyaWVzXCI6W1wiTC5zY3JhdGNocGFkXCJdLFwicGx1Z2luc1wiOltdLFwicmVjZW50Q29sb3JzXCI6W10sXCJmb3JtYXRXaWR0aFwiOlwiMjQwXCIsXCJjcmVhdGVUYXJnZXRcIjpmYWxzZSxcInBhZ2VGb3JtYXRcIjp7XCJ4XCI6MCxcInlcIjowLFwid2lkdGhcIjo4MjcsXCJoZWlnaHRcIjoxMTY5fSxcInNlYXJjaFwiOnRydWUsXCJzaG93U3RhcnRTY3JlZW5cIjp0cnVlLFwiZ3JpZENvbG9yXCI6XCIjZDBkMGQwXCIsXCJkYXJrR3JpZENvbG9yXCI6XCIjNmU2ZTZlXCIsXCJhdXRvc2F2ZVwiOnRydWUsXCJyZXNpemVJbWFnZXNcIjpudWxsLFwib3BlbkNvdW50ZXJcIjowLFwidmVyc2lvblwiOjE4LFwidW5pdFwiOjEsXCJpc1J1bGVyT25cIjpmYWxzZSxcInVpXCI6XCJcIn0ifQ==",
     "telemetry.enableCrashReporter": false,
     "window.menuBarVisibility": "default",
     "workbench.statusBar.visible": true,

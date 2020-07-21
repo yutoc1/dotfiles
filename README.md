@@ -34,10 +34,6 @@
 - python-pip
     * flake8
     * autopep8
-- python-pipenv
-- anyenv
-    * anyenv-update
-    * pyenv
 
 ## Audio/Bluetooth
 - alsa-utils
