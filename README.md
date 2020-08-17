@@ -5,6 +5,8 @@
 - tlp
 - fcitx-mozc
 - redshift
+- gnome-keyring
+- libsecret
 
 ## Windowmanager
 - i3wm-gap
