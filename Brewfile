@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+cask "clipy"
+cask "google-chrome"
+cask "iterm2"
+cask "the-unarchiver"
+cask "visual-studio-code"
