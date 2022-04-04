@@ -14,29 +14,37 @@ setopt nolistbeep
 setopt no_beep
 
 # alias
-alias ls='ls --color=auto'
-alias ll='ls -lA --color=auto'
+case "${OSTYPE}" in
+darwin*)
+    alias ls="ls -G"
+    alias ll="ls -lAG"
+    ;;
+linux*)
+    alias ls='ls --color'
+    alias ll='ls -lA --color'
+    alias xp='xsel -bo'
+    alias xc='xsel -bi'
+    alias red='redshift -O 4500'
+    alias redx='redshift -x'
+    alias pacman='sudo pacman'
+    alias mozcdic='/usr/lib/mozc/mozc_tool -mode=dictionary_tool'
+    ;;
+esac
 alias l='clear && ll'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias ga='git add'
 alias gd='git diff'
-#alias gs='git status'
 alias gp='git push'
 alias gb='git branch'
 alias gco='git checkout'
 alias gc='git commit'
+alias git fixit='git commit --amend --no-edit'
 alias vi='vim'
-alias pacman='sudo pacman'
 alias w3='w3m google.com'
 alias w3m='w3m google.com'
-alias mozcdic='/usr/lib/mozc/mozc_tool -mode=dictionary_tool'
 alias yp='youtube-dl `xp` -o - | cvlc -'
-alias xp='xsel -bo'
-alias xc='xsel -bi'
-alias red='redshift -O 4500'
-alias redx='redshift -x'
 
 # history
 HISTFILE=~/.cache/zsh/.zsh_history
@@ -64,6 +72,9 @@ zstyle ':completion:*' list-colors 'di=;34;1' 'ln=;35;1' 'so=;32;1' 'ex=31;1' 'b
 # GO setting
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
+
+# Python Path
+export PATH=$PATH:/Users/yuto/Library/Python/3.8/bin
 
 # Ruby setting
 export PATH="$(ruby -e 'print Gem.user_dir')/bin:$PATH"
