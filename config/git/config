@@ -17,3 +17,16 @@
     o = browse-remote
     pr = browse-remote --pr
     sha = "!f() { git rev-parse \"${1-HEAD}\"; }; f"
+    s = status
+    ss = status -s
+    b = branch
+    l = log
+    cm = commit
+    co = checkout
+    rb = rebase
+    st = stash
+    sh = show
+    pr = pull -r
+    ps = push
+    alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
+    df = diff

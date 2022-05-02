@@ -1,6 +1,5 @@
 # Initial
-autoload colors
-colors
+autoload colors; colors
 
 # opt
 setopt auto_cd
@@ -34,13 +33,13 @@ alias l='clear && ll'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
+alias g='git'
 alias ga='git add'
 alias gd='git diff'
 alias gp='git push'
 alias gb='git branch'
 alias gco='git checkout'
 alias gc='git commit'
-alias git fixit='git commit --amend --no-edit'
 alias vi='vim'
 alias w3='w3m google.com'
 alias w3m='w3m google.com'
